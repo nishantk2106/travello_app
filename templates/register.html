@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible',content='IE=edge'>
+    <title>Registeration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet'type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="register" method="post">
+        {% csrf_token %}
+         
+        <input type="text" name="first_name", placeholder ="first name"><br>
+        <input type="text" name="last_name", placeholder ="last name"><br>
+        <input type="text" name="username", placeholder ="username"><br>
+        <input type="email"name="email", placeholder ="email"><br>
+        <input type="password" name="password1", placeholder ="password"><br>
+        <input type="password" name="password2", placeholder ="confirm password"><br>
+        <input type="Submit">
+    </form>
+    
+</body>
+</html>
